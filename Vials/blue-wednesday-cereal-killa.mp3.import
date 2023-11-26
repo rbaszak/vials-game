@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/blue-wednesday-cereal-killa.mp3-c706a9cc8724393f7055d43bc380a606.mp3str"
+
+[deps]
+
+source_file="res://blue-wednesday-cereal-killa.mp3"
+dest_files=[ "res://.import/blue-wednesday-cereal-killa.mp3-c706a9cc8724393f7055d43bc380a606.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

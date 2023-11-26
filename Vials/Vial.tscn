@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Vial.gd" type="Script" id=1]
+
+[node name="Vial" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Walls" type="Polygon2D" parent="."]
+polygon = PoolVector2Array( -40, -248, -48, -248, -48, 0, 0, 40, 48, 0, 48, -248, 40, -248, 40, 0, 0, 32, -40, 0 )
+
+[node name="Space0" type="Position2D" parent="."]
+position = Vector2( 0, -24 )
+
+[node name="Space1" type="Position2D" parent="."]
+position = Vector2( 0, -88 )
+
+[node name="Space2" type="Position2D" parent="."]
+position = Vector2( 0, -152 )
+
+[node name="Space3" type="Position2D" parent="."]
+position = Vector2( 0, -216 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = -50.0
+margin_top = -250.0
+margin_right = 50.0
+margin_bottom = 40.0
+
+[node name="ActiveMarker" type="Polygon2D" parent="."]
+visible = false
+color = Color( 0.101961, 0.415686, 0.027451, 1 )
+polygon = PoolVector2Array( 0, 64, -24, 80, -24, 112, 0, 128, 24, 112, 24, 80 )
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
